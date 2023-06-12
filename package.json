@@ -9,7 +9,7 @@
         "url": "https://github.com/mehulkaklotar/gutenberg-sortable-hoc.git"
     },
     "dependencies": {
-        "react-sortable-hoc": "^0.8.3"
+        "react-sortable-hoc": "^2.0.0"
     },
     "devDependencies": {
         "@wordpress/babel-preset-default": "^1.1.2",
