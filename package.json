@@ -1,12 +1,12 @@
 {
-    "name": "gutenberg-sortable",
-    "version": "1.0.5",
+    "name": "gutenberg-sortable-hoc",
+    "version": "1.0.0",
     "license": "MIT",
     "main": "dist/Sortable.js",
     "author": "Mehul Kaklotar",
     "repository": {
         "type": "git",
-        "url": "https://github.com:lucprincen/gutenberg-sortable.git"
+        "url": "https://github.com/mehulkaklotar/gutenberg-sortable-hoc.git"
     },
     "dependencies": {
         "react-sortable-hoc": "^0.8.3"

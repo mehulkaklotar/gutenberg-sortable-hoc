@@ -108,6 +108,7 @@ var Sortable = function (_Component) {
         key: 'render',
         value: function render() {
             var items = this.props.items;
+            var pressDelay = this.props.pressDelay;
             var SortableList = this.getSortableList();
 
             //reset key-focus after refresh:
@@ -118,6 +119,7 @@ var Sortable = function (_Component) {
                 wp.element.createElement(SortableList, {
                     axis: this.getAxis(),
                     items: items,
+                    pressDelay: pressDelay,
                     onSortStart: this.onSortStart,
                     onSortEnd: this.onSortEnd
                 })

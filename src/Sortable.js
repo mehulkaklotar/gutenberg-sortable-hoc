@@ -62,6 +62,7 @@ class Sortable extends Component {
      */
     render() {
         const items = this.props.items;
+        const pressDelay = this.props.pressDelay;
         const SortableList = this.getSortableList();
 
         //reset key-focus after refresh:
@@ -72,6 +73,7 @@ class Sortable extends Component {
             <SortableList
                 axis={this.getAxis()}
                 items={items}
+                pressDelay={pressDelay}
                 onSortStart={this.onSortStart}
                 onSortEnd={this.onSortEnd}
             />

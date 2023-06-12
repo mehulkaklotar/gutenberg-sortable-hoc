@@ -20,14 +20,14 @@ Like these images in a block with desktop wallpapers:
 ## Installation
 
 Using npm:
-`$ npm install gutenberg-sortable --save`
+`$ npm install gutenberg-sortable-hoc --save`
 
 And then, using a module bundler that supports ES2015 modules (like [webpack](https://webpack.js.org/)):
 ```javascript
-import Sortable from 'gutenberg-sortable';
+import Sortable from 'gutenberg-sortable-hoc';
 
 //or, if you're not using ES6:
-var Sortable = require('gutenberg-sortable');
+var Sortable = require('gutenberg-sortable-hoc');
 ```
 
 
