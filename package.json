@@ -1,0 +1,22 @@
+{
+    "name": "gutenberg-sortable",
+    "version": "1.0.5",
+    "license": "MIT",
+    "main": "dist/Sortable.js",
+    "author": "Mehul Kaklotar",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com:lucprincen/gutenberg-sortable.git"
+    },
+    "dependencies": {
+        "react-sortable-hoc": "^0.8.3"
+    },
+    "devDependencies": {
+        "@wordpress/babel-preset-default": "^1.1.2",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0"
+    },
+    "scripts": {
+        "build": "babel src --presets babel-preset-env --out-dir dist"
+    }
+}
