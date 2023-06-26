@@ -109,7 +109,6 @@ var Sortable = function (_Component) {
         value: function render() {
             var items = this.props.items;
             var pressDelay = this.props.pressDelay;
-            var disableAutoscroll = this.props.disableAutoscroll;
             var SortableList = this.getSortableList();
 
             //reset key-focus after refresh:
@@ -120,8 +119,6 @@ var Sortable = function (_Component) {
                 wp.element.createElement(SortableList, {
                     axis: this.getAxis(),
                     items: items,
-                    lockAxis: this.getLockAxis(),
-                    disableAutoscroll: disableAutoscroll,
                     pressDelay: pressDelay,
                     onSortStart: this.onSortStart,
                     onSortEnd: this.onSortEnd
@@ -192,20 +189,6 @@ var Sortable = function (_Component) {
             }
 
             return this.props.axis;
-        }
-
-        /**
-         * Get a default lock axis, and allow for the "grid" axis type
-         */
-
-    }, {
-        key: 'getLockAxis',
-        value: function getLockAxis() {
-            if (typeof this.props.lockAxis == 'undefined') {
-                return 'y';
-            }
-
-            return this.props.lockAxis;
         }
 
         /*************************************/

@@ -63,7 +63,6 @@ class Sortable extends Component {
     render() {
         const items = this.props.items;
         const pressDelay = this.props.pressDelay;
-        const disableAutoscroll = this.props.disableAutoscroll;
         const SortableList = this.getSortableList();
 
         //reset key-focus after refresh:
@@ -74,8 +73,6 @@ class Sortable extends Component {
             <SortableList
                 axis={this.getAxis()}
                 items={items}
-                lockAxis={this.getLockAxis()}
-                disableAutoscroll={disableAutoscroll}
                 pressDelay={pressDelay}
                 onSortStart={this.onSortStart}
                 onSortEnd={this.onSortEnd}
@@ -131,17 +128,6 @@ class Sortable extends Component {
         }
 
         return this.props.axis;
-    }
-
-    /**
-     * Get a default lock axis, and allow for the "grid" axis type
-     */
-    getLockAxis() {
-        if (typeof (this.props.lockAxis) == 'undefined') {
-            return 'y';
-        }
-
-        return this.props.lockAxis;
     }
 
 
