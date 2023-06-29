@@ -38,6 +38,7 @@ class Sortable extends Component {
 
                         //generate a SortableElement using the item and the child
                         let SortableItem = SortableElement(() => {
+                            child.props['collection'] = items[index];
                             return (child)
                         });
 

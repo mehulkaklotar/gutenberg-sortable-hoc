@@ -85,6 +85,7 @@ var Sortable = function (_Component) {
 
                         //generate a SortableElement using the item and the child
                         var SortableItem = (0, _reactSortableHoc.SortableElement)(function () {
+                            child.props['collection'] = items[index];
                             return child;
                         });
 
